@@ -1,0 +1,216 @@
+	  	h4 {
+		  	-webkit-margin-before: 0.5em;
+			-webkit-margin-after: 1em;
+			-webkit-margin-start: 0px;
+			-webkit-margin-end: 0px;	
+	  	}
+	  	.column h4 {margin:5px 5px 0px 5px;}
+	  	#alert h3 {-webkit-margin-after: 0.5em;}
+	    body { margin:0; padding:0; }
+    	#map { position:absolute; top:0; bottom:0; width:100%; }
+	    #mapcontainer {position: relative;height: 350px;}
+
+		#mobile {
+		   	display: none;
+		}
+
+		#mobile_description {
+			display: none;
+		}
+
+	    @media only screen and (max-device-width: 480px) {
+	    	#mapcontainer {position: relative;height: 250px;}
+	    	#overlay {
+				width: 11em;
+				margin: 0 auto;
+				top: 80%;
+				position: relative;
+				z-index: 999;
+				text-align: center;
+				background: black;
+				padding: 10px;
+				color: rgb(245, 243, 240);
+				font-weight: 100;
+				font-size: 13px;
+				border-radius: 2px;
+				-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+				box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+				pointer-events: all;
+				cursor: pointer;
+		    }
+		    #notmobile {
+		    	display: none;
+		    }
+			#mobile {
+			   	display: block;
+			}
+			#mobile_description {
+			   	display: block;
+			}
+		}
+
+		span.step {
+			border: 1px solid #000000;
+			border-radius: 2.0em;
+			-moz-border-radius: 2.0em;
+			-webkit-border-radius: 2.0em;
+			color: #000000;
+			display: inline-block;
+			line-height: 2.4em;
+			margin-right: 5px;
+			text-align: center;
+			width: 2.5em;
+			font-size: 9px;
+			float: left;
+		}
+
+		.snap-drawer span.step {
+			border: 1px solid white;
+			border-radius: 2.0em;
+			-moz-border-radius: 2.0em;
+			-webkit-border-radius: 2.0em;
+			color: white;
+			display: inline-block;
+			line-height: 2.4em;
+			margin-right: 5px;
+			text-align: center;
+			width: 2.5em;
+			font-size: 9px;
+			float: left;
+		}
+
+		.onmap_container {
+			cursor:pointer;
+			width: 100%;
+			padding: 12px;
+			list-style: none;
+		}
+		.onmap_container:hover { 
+			background-color:rgb(235, 235, 235);
+		}
+
+		#onmmap .active {
+			background-color:rgb(235, 235, 235);
+		}
+
+		.onmap_container:active, .active { 
+			background-color:rgb(235, 235, 235);
+		}
+
+		.onmap_container.selected { 
+			background-color:rgb(235, 235, 235);
+		}
+
+		.snap-drawer .onmap_container:hover {
+			background-color: #BA0600;
+		}
+
+		.snap-drawer .onmap_container {
+			cursor:pointer;
+			width: 100%;
+			padding: 12px;
+			box-shadow: 0 -1px 0 rgba(0,0,0,0.1);
+
+		}
+
+		.avatar {
+			float: right;
+			width: 50px;
+			height: 50px;
+			margin-left: 20px;
+			overflow: hidden;
+			background-color: #f2f2f0;
+			-webkit-border-radius: 100%;
+			-moz-border-radius: 100%;
+			border-radius: 100%;
+		}
+		.author {
+			padding-bottom: 10px;
+			font-size: 16px;
+			line-height: 1.2;
+		}
+
+		.address {
+			font-size: 12px;
+			margin-left: 30px;
+		}
+		.distance {
+			font-size: 12px;
+			margin-left: 30px;
+			margin-top: 10px;
+		}
+	    #overlay {
+			width: 11em;
+			margin: 0 auto;
+			top: 83%;
+			position: relative;
+			z-index: 999;
+			text-align: center;
+			background: black;
+			padding: 10px;
+			color: rgb(245, 243, 240);
+			font-weight: 100;
+			font-size: 13px;
+			border-radius: 2px;
+			-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+			box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+			pointer-events: all;
+			cursor: pointer;
+	    }
+	    .thumb {
+	    	background: #ccc;
+			border: none;
+			width: 107px;
+			height: 92px;
+			overflow: hidden;
+			/*position: relative;*/
+			cursor: pointer;
+			outline: none;
+			margin: 10px 10px 0px 0px;
+			float: left;
+	    }
+
+	    #expand:after {
+	    	content: '»';
+	    }
+
+		.dl-menuwrapper  .dl-trigger:after {
+			content: '';
+			position: absolute;
+			width: 68%;
+			height: 5px;
+			background: #fff;
+			top: 10px;
+			left: 16%;
+			box-shadow: 
+				0 10px 0 #fff, 
+				0 20px 0 #fff;
+		}
+
+	    .dl-trigger, #expand, #geolocate {
+	    	margin-right: 7px;
+	    }
+
+		.firstcharacter { float: left; color: #BA0600; font-size: 75px; line-height: 60px; padding-top: 4px; padding-right: 8px; padding-left: 3px; font-family: Georgia; }
+
+		.has-pullquote:before {
+		  /* Reset metrics. */
+		  padding: 0;
+		  border: none;
+		  
+		  /* Content */
+		  content: attr(data-pullquote);
+		  
+		  /* Pull out to the right, modular scale based margins. */
+		  float: right;
+		  width: 320px;
+		  margin: 12px -140px 24px 36px;
+		  
+		  /* Baseline correction */
+		  position: relative;
+		  top: 5px;
+		  
+		  /* Typography (30px line-height equals 25% incremental leading) */
+		  font-size: 23px;
+		  line-height: 30px;
+		}
